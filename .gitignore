@@ -1,8 +1,21 @@
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+#!.yarn/cache
+
+.pnp.*
+
+yarn-error.log
+
 /node_modules
 /dist
 
 /.parcel-cache
-yarn-error.log
 .idea
+.vscode
 .cache
 .DS_Store
