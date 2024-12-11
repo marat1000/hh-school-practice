@@ -8,7 +8,7 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
-console.log(4);
+console.log(5);
 
 // 'eslint --fix' example
 
