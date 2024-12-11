@@ -10,6 +10,7 @@
     "build": "parcel build *.html --public-url './'",
     "deploy": "yarn build && gh-pages -d dist",
     "lint": "eslint ./src/",
+    "lint-fix": "eslint --fix ./src/",
     "postinstall": "cp tools/pre-commit .git/hooks || true",
     "format": "bash tools/format.sh"
   },
