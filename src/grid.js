@@ -12,7 +12,7 @@ console.log(5);
 
 // 'eslint --fix' example
 
-const foo = true;
-if (foo) {
-    // ...
-}
+// const foo = true;
+// if (!!foo) {
+//     // ...
+// }
