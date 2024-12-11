@@ -1,16 +1,16 @@
 const grid = document.createElement('div');
-grid.className = 'grid';
+grid.className = "grid";
 document.body.appendChild(grid);
 
 document.addEventListener('keydown', (event) => {
-    if (event.ctrlKey && event.code === 'KeyG') {
+        if (event.ctrlKey && event.code === 'KeyG') {
         grid.classList.toggle('grid_visible');
     }
 });
 
 // 'eslint --fix' example
 
-// let foo = true;
+// const foo = true;
 // if (!!foo) {
 //     // ...
 // }
