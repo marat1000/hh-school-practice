@@ -10,6 +10,7 @@ export default [
         ...globals.node,
       },
     },
+    ignores: ["eslint.config.mjs"]
   },
   js.configs.recommended,
   eslintConfigPrettier,
