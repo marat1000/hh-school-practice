@@ -9,8 +9,7 @@ export default [
         ...globals.browser,
         ...globals.node,
       },
-    },
-    ignores: ["eslint.config.mjs"]
+    }
   },
   js.configs.recommended,
   eslintConfigPrettier,

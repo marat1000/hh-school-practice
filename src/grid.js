@@ -8,11 +8,11 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
-console.log(1);
+console.log(2);
 
 // 'eslint --fix' example
 
-// const foo = true;
-// if (!!foo) {
-//     // ...
-// }
+const foo = true;
+if (foo) {
+    // ...
+}

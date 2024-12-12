@@ -9,7 +9,7 @@
     "dev": "parcel *.html",
     "build": "parcel build *.html --public-url './'",
     "deploy": "yarn build && gh-pages -d dist",
-    "lint": "eslint ./src/",
+    "lint": "eslint src/",
     "lint-fix": "eslint --fix ./src/",
     "postinstall": "cp tools/githooks/pre-commit .git/hooks || true",
     "format": "bash tools/format.sh"
@@ -20,6 +20,7 @@
     "eslint": "9.16.0",
     "eslint-config-prettier": "9.1.0",
     "gh-pages": "3.2.3",
+    "globals": "15.13.0",
     "less": "4.1.3",
     "lint-staged": "15.2.10",
     "parcel": "2.8.0",
