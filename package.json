@@ -11,7 +11,7 @@
     "deploy": "yarn build && gh-pages -d dist",
     "lint": "eslint",
     "lint-fix": "eslint --fix ./src/",
-    "postinstall": "cp tools/githooks/pre-commit .git/hooks || true",
+    "postinstall": "cp -p tools/githooks/pre-commit .git/hooks || true",
     "format": "bash tools/format.sh"
   },
   "devDependencies": {
