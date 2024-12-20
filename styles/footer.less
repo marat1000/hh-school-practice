@@ -4,6 +4,10 @@
     color: #999999;
     background-color: var(--header-background-color);
 
+    a:hover {
+        opacity: 0.5;
+    }
+
     .footer__top {
         padding-bottom: 30px;
         border-bottom: 1px solid #666666;
@@ -56,5 +60,32 @@
     }
 
     @media @gt-tablet {
+        padding-top: 35px;
+        padding-bottom: 16px;
+
+        .footer__top {
+            justify-content: space-between;
+            padding-right: 0;
+            padding-bottom: 9px;
+        }
+
+        .footer__socials,
+        .footer__apps,
+        .footer__logo {
+            width: 33%;
+        }
+
+        .footer__socials {
+            margin-right: 0;
+        }
+
+        .footer__apps {
+            justify-content: center;
+        }
+
+        .footer__logo {
+            display: flex;
+            justify-content: flex-end;
+        }
     }
 }
