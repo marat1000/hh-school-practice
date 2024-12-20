@@ -38,6 +38,19 @@
   display: block;
 }
 
+.visually-hidden {
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  border: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
 html {
   -webkit-text-size-adjust: 100%;
   line-height: 1.15;
