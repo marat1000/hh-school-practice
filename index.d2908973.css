@@ -489,7 +489,6 @@ h4 {
 
 .features .features__item {
   align-items: center;
-  margin-bottom: 2px;
   padding-right: 30px;
   display: flex;
 }
@@ -504,7 +503,6 @@ h4 {
 }
 
 .features .features__text {
-  font-family: Arial;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -513,13 +511,17 @@ h4 {
 
 @media (width >= 768px) {
   .features .features__wrapper {
-    justify-content: space-between;
-    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    display: grid;
   }
 
   .features .features__item {
-    width: 30%;
     padding-right: 0;
+  }
+
+  .features .features__item:last-child {
+    padding-right: 20px;
   }
 
   .features .features__icon {
@@ -538,17 +540,16 @@ h4 {
   }
 
   .features .features__item {
-    width: 31%;
     padding-right: 40px;
+  }
+
+  .features .features__item:last-child {
+    padding-right: 60px;
   }
 
   .features .features__icon svg {
     width: 50px;
     height: 50px;
-  }
-
-  .features .features__item:last-child {
-    padding-right: 60px;
   }
 }
 
@@ -577,9 +578,7 @@ h4 {
 }
 
 .footer .footer__bottom {
-  padding-top: 1px;
   padding-right: 30px;
-  font-family: Arial;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -600,14 +599,10 @@ h4 {
   }
 
   .footer .footer__top {
+    justify-content: space-between;
     align-items: baseline;
     padding-bottom: 0;
-    padding-right: 7px;
     display: flex;
-  }
-
-  .footer .footer__socials {
-    margin-right: auto;
   }
 
   .footer .footer__bottom {
@@ -622,17 +617,9 @@ h4 {
   }
 
   .footer .footer__top {
-    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
     padding-bottom: 9px;
-    padding-right: 0;
-  }
-
-  .footer .footer__socials, .footer .footer__apps, .footer .footer__logo {
-    width: 33%;
-  }
-
-  .footer .footer__socials {
-    margin-right: 0;
+    display: grid;
   }
 
   .footer .footer__apps {
@@ -652,7 +639,7 @@ h4 {
 .socials .socials__link {
   border-radius: 50%;
   flex-shrink: 0;
-  margin-right: 5.6%;
+  margin-right: 16px;
   display: flex;
   overflow: hidden;
 }
@@ -660,12 +647,6 @@ h4 {
 .socials .socials__button svg {
   width: 35px;
   height: 35px;
-}
-
-@media (width >= 768px) {
-  .socials .socials__link {
-    margin-right: 11.5%;
-  }
 }
 
 @media (width >= 930px) {
@@ -680,7 +661,7 @@ h4 {
 
 .apps .apps__link {
   flex-shrink: 0;
-  margin-right: 2.5%;
+  margin-right: 6px;
   display: flex;
 }
 
