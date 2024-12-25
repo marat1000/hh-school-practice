@@ -43,13 +43,9 @@
 
         .footer__top {
             display: flex;
+            justify-content: space-between;
             align-items: baseline;
             padding-bottom: 0;
-            padding-right: 7px;
-        }
-
-        .footer__socials {
-            margin-right: auto;
         }
 
         .footer__bottom {
@@ -62,19 +58,9 @@
         padding-bottom: 16px;
 
         .footer__top {
-            justify-content: space-between;
-            padding-right: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             padding-bottom: 9px;
-        }
-
-        .footer__socials,
-        .footer__apps,
-        .footer__logo {
-            width: 33%;
-        }
-
-        .footer__socials {
-            margin-right: 0;
         }
 
         .footer__apps {
