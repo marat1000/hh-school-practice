@@ -6,7 +6,6 @@
     .features__item {
         display: flex;
         align-items: center;
-        margin-bottom: 2px;
         padding-right: 30px;
     }
 
@@ -28,13 +27,17 @@
 
     @media @gt-mobile {
         .features__wrapper {
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 30px;
         }
 
         .features__item {
-            width: 30%;
             padding-right: 0;
+        }
+
+        .features__item:last-child {
+            padding-right: 20px;
         }
 
         .features__icon {
@@ -51,17 +54,16 @@
         }
 
         .features__item {
-            width: 31%;
             padding-right: 40px;
+        }
+
+        .features__item:last-child {
+            padding-right: 60px;
         }
 
         .features__icon svg {
             width: 50px;
             height: 50px;
-        }
-
-        .features__item:last-child {
-            padding-right: 60px;
         }
     }
 }
